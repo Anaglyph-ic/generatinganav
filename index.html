@@ -1,0 +1,57 @@
+<head>
+<title>Anaverse: the generator</title>
+  <meta name="description" content="Growing the Anaverse for everyone.">
+
+
+  <meta property="og:url" content="https://intro.anaver.se/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Anaverse: the generator">
+  <meta property="og:description" content="Growing the Anaverse for everyone.">
+  <meta property="og:image" content="">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta property="twitter:domain" content="gen.anaver.se">
+  <meta property="twitter:url" content="https://gen.anaver.se/">
+  <meta name="twitter:title" content="Anaverse: the generator">
+  <meta name="twitter:description" content="Growing the Anaverse for everyone.">
+  <meta name="twitter:image" content="">
+  <link rel="icon" href="./favicon.png">
+  
+  <style>
+    .centerbg{
+      background:white;
+      border:5px solid white;
+    }
+      </style>
+</head>
+<body >
+  <div style="
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2%;
+    padding-top: 0px;
+    ">
+
+<div id="observablehq-bandeau-2f82d25f"></div>
+<div id="observablehq-intro-2f82d25f"></div>
+<div id="observablehq-table-2f82d25f"></div>
+    
+  </div>
+
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+  
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/@anaglyph-ic/gen-anaver-se@337.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "bandeau") return new Inspector(document.querySelector("#observablehq-bandeau-2f82d25f"));
+  if (name === "intro") return new Inspector(document.querySelector("#observablehq-intro-2f82d25f"));
+  if (name === "table") return new Inspector(document.querySelector("#observablehq-table-2f82d25f"));
+});
+
+  
+  
+  </script>
+</body>
