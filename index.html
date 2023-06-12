@@ -46,19 +46,20 @@ font-family:'Source Sans Pro', sans-serif;
     padding: 2%;
     padding-top: 0px;
     ">
-<div class="centerbg" id="observablehq-bandeau-51df2b6e"></div>
-<div class="centerbg" id="observablehq-intro-51df2b6e"></div>
-<div class="centerbg" id="observablehq-table-51df2b6e"></div>
+
+<div  class="centerbg"  id="observablehq-bandeau-cd78959a"></div>
+<div  class="centerbg"  id="observablehq-intro-cd78959a"></div>
+<div  class="centerbg"  id="observablehq-table-cd78959a"></div>
   </div>
 
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
 <script type="module">
 import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
-import define from "https://api.observablehq.com/@anaglyph-ic/gen-anaver-se@350.js?v=3";
+import define from "https://api.observablehq.com/@anaglyph-ic/gen-anaver-se.js?v=3";
 new Runtime().module(define, name => {
-  if (name === "bandeau") return new Inspector(document.querySelector("#observablehq-bandeau-51df2b6e"));
-  if (name === "intro") return new Inspector(document.querySelector("#observablehq-intro-51df2b6e"));
-  if (name === "table") return new Inspector(document.querySelector("#observablehq-table-51df2b6e"));
+  if (name === "bandeau") return new Inspector(document.querySelector("#observablehq-bandeau-cd78959a"));
+  if (name === "intro") return new Inspector(document.querySelector("#observablehq-intro-cd78959a"));
+  if (name === "table") return new Inspector(document.querySelector("#observablehq-table-cd78959a"));
 });
 </script>
 </body>
